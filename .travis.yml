@@ -9,7 +9,8 @@ env:
     - CGO_ENABLED=0
 
 script:
- - go build -v ./...
+ - GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -v ./...
+ - GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -v ./...
  
 deploy:
   on:
