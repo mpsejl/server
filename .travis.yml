@@ -1,7 +1,13 @@
 language: go
 go: 
  - 1.9
- 
+
+env:
+  global:
+    - GOARCH=amd64
+    - GOOS=windows
+    - CGO_ENABLED=0
+
 script:
  - go build -v ./...
  
