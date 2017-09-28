@@ -18,7 +18,7 @@ deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
-  region: us-east-2
-  bucket: ktl.s3.apps
+  region: us-east-1
+  bucket: ktl.apps
   upload-dir: Test
   skip_cleanup: true
